@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markuse portfoolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="site">
+
+    <header>
+        <div class="header-left">
+            <span class="mono dim">~/markus</span>
+        </div>
+        <nav>
+            <button class="navbtn active" data-tab="home">avaleht</button>
+            <button class="navbtn" data-tab="skills">oskused</button>
+            <button class="navbtn" data-tab="contact">kontakt</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="panel active" id="tab-home">
+            <div class="home-text">
+                <p class="mono dim small">IT-süsteemide nooremspetsialist, tase 4</p>
+                <h1>Markus Gaidalenko</h1>
+                <p class="tagline"><br>Meeldib teada mis <em>päriselt</em> toimub.</p>
+                <p class="about">
+                    Uurin pidevalt uusi võimalusi ning lahendusi, tüürin alati paremuse poole. Pole süsteemi, mis mind ei huvita.
+                    Kõige tugevamalt õpitud valdkonnad on <em>serverid</em> ja <em>võrk</em>. Pole väljakutset, mis oleks liiga suur mulle.
+                    Enim huvitab mind <em>küberturvalisus</em>.
+                </p>
+                <div class="cta-row">
+                    <button onclick="switchTab('skills')">oskused/teadmised →</button>
+                    <button class="outline" onclick="switchTab('contact')">kontakt</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="panel" id="tab-skills">
+
+            <p class="skills-intro mono small dim">// kliki tööriistale et näha rohkem</p>
+
+            <div class="skills-area">
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/security-onion.png" alt="Security Onion logo">
+                        </div>
+                        <span class="skill-name">Security Onion</span>
+                        <span class="skill-tag">SIEM · IDS · NSM</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Koostasin ja kaitsesin edukalt lõputööd Security Onion teemal. Täielikult passiivne võrgumonitooringu ja ohutuvastuse lahendus.</p>
+                        <div class="skill-stack">
+                            <span>Suricata</span><span>Zeek</span><span>Stenographer</span><span>Strelka</span><span>Elasticsearch</span><span>Kibana</span><span>Sigma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/proxmox-logo.png" alt="Proxmox logo">
+                        </div>
+                        <span class="skill-name">Proxmox VE</span>
+                        <span class="skill-tag">virtualisatsioon</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Palju kasutatud hüpverviisor. 
+                        Nii koolis, kui ka isiklikes projektides. Olen sellega üsna tuttav. Ei ole ka võõras Microsofti Hyper-V tarkvarale.</p>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/wifi.png" alt="võrk">
+                        </div>
+                        <span class="skill-name">Võrgud ja kaughaldus</span>
+                        <span class="skill-tag">Kõik IT-spetsialisti tööks vajalik</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Võrkudest ulatuslikult õppinud mitmeid aastaid. Seda nii seadistades, kui ka selle monitoorimises.
+                            Võrguturvalisus on üks mu suurematest huvidest.
+                        </p>
+                        <div class="skill-stack">
+                            <span>Switchid</span><span>Ruuterid</span><span>Active Directory</span><span>Domeenid</span><span>PCAP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/m365-logo.png" alt="M365 logo">
+                        </div>
+                        <span class="skill-name">M365</span>
+                        <span class="skill-tag">Kogenud M365 toodetega</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            Tean enda kätt ümber M365 toodete.
+                        </p>
+                        <div class="skill-stack">
+                            <span>Excel</span><span>Word</span><span>PowerPoint</span><span>Forms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/ps-logo.png" alt="ps logo">
+                        </div>
+                        <span class="skill-name">Bash, PS</span>
+                        <span class="skill-tag">Skriptimine</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Enamvähem kursis skriptimisega nii Bashis, kui ka PowerShellis. 
+                            Olen mõlemat kasutanud ka isiklike projektide jaoks.</p>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/sql-logo.png" alt="sql">
+                        </div>
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-tag">Erinev tarkvara</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Olen kokkupuutunud erinevate andmebaaside tarkvaraga. Ei ole mitte mingil juhul professionaal, kuid saan hakkama.</p>
+                        <div class="skill-stack">
+                            <span>Microsoft SQL</span><span>PostgreSQL</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/windowslinux-logo.png" alt="Windows & Linux logo">
+                        </div>
+                        <span class="skill-name">Linux & Windows</span>
+                        <span class="skill-tag">Kogenud mõlema poolega</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Igapäevased töökeskkonnad. Tunnen end mugavalt mõlemas operatsioonisüsteemis.</p>
+                        <div class="skill-stack">
+                            <span>SSH</span><span>Crontab/Task Scheduler</span><span>Bash/PS</span><span>FTP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/zabbix-logo.png" alt="Zabbix logo">
+                        </div>
+                        <span class="skill-name">Zabbix</span>
+                        <span class="skill-tag">Agent, monitooring, jne</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Olen kord või kaks kasutanud Zabbixit monitoorimiseks. Ei ole professionaal, kuid piisavalt tuttav.</p>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/samba-logo.png" alt="Samba logo">
+                        </div>
+                        <span class="skill-name">Samba AD/DC</span>
+                        <span class="skill-tag">Algtasemel kokku puutunud</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Õppimise ajal lõin paar väiksemat projekti kasutades Sambat.</p>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/truenas-logo.png" alt="TrueNAS logo">
+                        </div>
+                        <span class="skill-name">TrueNAS</span>
+                        <span class="skill-tag">Algtasemel kokku puutunud</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Õppimise ajal lõin paar väiksemat projekti kasutades TrueNASi.</p>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-head">
+                        <div class="skill-logo">
+                            <img src="img/skills/web-logo.png" alt="web">
+                        </div>
+                        <span class="skill-name">HTML · CSS · JS</span>
+                        <span class="skill-tag">see leht on tõend</span>
+                        <span class="skill-arrow">↓</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>Ei ole küll veebiarendaja, kuid saan enamvähem hakkama. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="panel" id="tab-contact">
+            <div class="contact-wrap">
+                <h2>Võta ühendust</h2>
+                <p class="contact-sub">loo kontakt ja vastan esimesel võimalusel :)</p>
+                <ul class="contact-list">
+                    <li><span class="mono dim">mail</span><a href="mailto:markusgaidalenko@gmail.com">markusgaidalenko@gmail.com</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span class="mono dim small">markus · <span id="yr"></span></span>
+    </footer>
+
+</div>
+
+<script src="js/details.js"></script>
+</body>
+</html>
