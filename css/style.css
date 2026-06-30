@@ -143,6 +143,10 @@ h1 {
     background: var(--white);
 }
 
+.jobs {
+    background-color: rgba(239, 230, 197, 0.419);
+}
+
 .skill-block { border-bottom: 1px solid var(--border); }
 .skill-block:last-child { border-bottom: none; }
 
